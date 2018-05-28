@@ -8,9 +8,9 @@ import {Error500Component} from './components/500/500.component';
 import {TokenGuard} from './services/token-guard.service';
 
 const routes: Routes = [
-  {path: '', redirectTo: '/index/fileList', pathMatch: 'full'}, // 根路径默认跳转
+  {path: '', redirectTo: 'login', pathMatch: 'full'}, // 根路径默认跳转
   {path: 'login', component: LoginComponent}, // 登录页
-  {path: 'index', loadChildren: './components/index/index.module#IndexModule', canLoad: [TokenGuard]}, // 主页
+  // {path: 'index', loadChildren: './components/index/index.module#IndexModule', canLoad: [TokenGuard]}, // 主页
   {path: '404', component: Error404Component},
   {path: '403', component: Error403Component},
   {path: '500', component: Error500Component}

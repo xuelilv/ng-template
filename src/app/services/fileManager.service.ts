@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
-import { ProgressHttp } from '../../progress-http';
+import { ProgressHttp } from '../progress-http';
 import { Observable } from 'rxjs';
 import { NzMessageService,NzNotificationService } from 'ng-zorro-antd';
-import { environment } from '../../../environments/environment';
+import { environment } from '../../environments/environment';
 
 @Injectable()
 export class FileUploadAndDownloadSerivce {
