@@ -1,0 +1,75 @@
+:host ::ng-deep .title {
+  max-width: 400px;
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -200px;
+  margin-top: -200px;
+  color: #ddd;
+  text-align: center;
+  font-size: 2em;
+}
+
+:host ::ng-deep .ant-layout {
+  height: 100%;
+}
+
+:host ::ng-deep .ant-layout-content {
+  background: url("../../../assets/images/login/background.png") 100% no-repeat;
+}
+
+:host ::ng-deep .login-form {
+  max-width: 400px;
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -200px;
+  margin-top: -150px;
+  padding: 30px 20px 0 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+:host ::ng-deep .ant-input {
+  background-color: #3e5871;
+  color: white;
+  height: 40px;
+}
+
+:host ::ng-deep .pwdGroup {
+  margin-top: 15px;
+}
+
+:host .footerBtn {
+  margin-top: 15px;
+  button {
+    margin: 15px 0;
+  }
+}
+
+:host ::ng-deep .login-form-forgot {
+  float: right;
+}
+
+:host ::ng-deep .login-form-button {
+  width: 100%;
+}
+
+:host ::ng-deep input::-webkit-input-placeholder {
+  color: lightgray;
+}
+
+:host ::ng-deep input::-moz-placeholder {
+  color: lightgray;
+}
+
+:host ::ng-deep input:-ms-input-placeholder {
+  color: lightgray;
+}
+
+:host .error {
+  color: #b94a48;
+  margin-top: 5px;
+}

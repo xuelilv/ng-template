@@ -1,0 +1,37 @@
+<nz-layout>
+  <nz-content>
+    <p class="title">WEB文件中转审计</p>
+    <form nz-form [formGroup]="loginForm" class="login-form" (ngSubmit)="submit()">
+      <div nz-form-item>
+        <div nz-form-control>
+          <nz-input-group [nzPrefix]="namePrefix">
+            <input type="text" nz-input formControlName="username" placeholder="用户名" [nzSize]="'large'">
+            <ng-template #namePrefix>
+              <i class="anticon anticon-user" style="color: lightgray"></i>
+              </ng-template>
+          </nz-input-group>
+          <div class="error" nz-form-explain *ngIf="loginForm.controls.username.dirty && loginForm.controls.username.hasError('required')">请输入用户名！</div>
+        </div>
+      </div>
+      <div nz-form-item>
+        <div nz-form-control>
+          <nz-input-group [nzPrefix]="pwdPrefix" class="pwdGroup">
+            <input type="password" nz-input formControlName="password" placeholder="密码" [nzSize]="'large'">
+            <ng-template #pwdPrefix>
+              <i class="anticon anticon-lock" style="color: lightgray"></i>
+              </ng-template>
+          </nz-input-group>
+          <div class="error" nz-form-explain *ngIf="loginForm.controls.password.dirty && loginForm.controls.password.hasError('required')">请输入密码！</div>
+        </div>
+      </div>
+      <div nz-form-item class="footerBtn">
+        <div nz-form-control>
+          <!-- <label nz-checkbox formControlName="remember">
+            <span style="color: white">记住用户名和密码</span>
+          </label> -->
+          <button nz-button class="login-form-button" [nzType]="'primary'" [nzSize]="'large'">登录</button>
+        </div>
+      </div>
+    </form>
+  </nz-content>
+</nz-layout>
